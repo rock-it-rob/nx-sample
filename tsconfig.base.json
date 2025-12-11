@@ -4,7 +4,6 @@
     "declaration": true,
     "declarationMap": true,
     "baseUrl": ".",
-    "jsx": "react-jsx",
     "allowJs": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,16 +13,5 @@
       }
     ],
     "types": ["jest", "node"]
-    //    "rootDir": ".",
-    //    "sourceMap": true,
-    //    "moduleResolution": "node",
-    //    "emitDecoratorMetadata": true,
-    //    "experimentalDecorators": true,
-    //    "importHelpers": true,
-    //    "target": "es2015",
-    //    "module": "esnext",
-    //    "lib": ["es2020", "dom"],
-    //    "skipLibCheck": true,
-    //    "skipDefaultLibCheck": true,
   }
 }
