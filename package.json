@@ -1,0 +1,8 @@
+{
+  "name": "nx-sample",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "nx": "19.8.14"
+  }
+}
