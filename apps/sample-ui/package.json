@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@nx-sample/components": "*"
+  }
+}
