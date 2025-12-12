@@ -4,7 +4,7 @@
   "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"],
   "references": [
     {
-      "path": "../../libs/components"
+      "path": "../../libs/components/tsconfig.lib.json"
     }
   ]
 }
