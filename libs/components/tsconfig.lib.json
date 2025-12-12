@@ -1,16 +1,26 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "types": [
+      "node",
+      "@nx/react/typings/cssmodule.d.ts",
+      "@nx/react/typings/image.d.ts"
+    ],
+    "rootDir": "src",
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo"
+  },
   "exclude": [
     "out-tsc",
     "dist",
+    "eslint.config.ts",
     "jest.config.ts",
     "src/**/*.test.ts",
-    "src/**/*.test.tsx",
-    "src/**/*.test.js",
-    "src/**/*.test.jsx",
-    "eslint.config.js",
-    "eslint.config",
-    "eslint.config.mjs"
+    "src/**/*.test.tsx"
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
 }

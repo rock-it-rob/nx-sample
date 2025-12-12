@@ -7,6 +7,9 @@
     },
     {
       "path": "./libs/components"
+    },
+    {
+      "path": "./libs/dates"
     }
   ]
 }
