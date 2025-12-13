@@ -2,6 +2,5 @@
   "name": "@nx-sample/sample-ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/sample-ui",
-  "projectType": "application",
-  "tags": []
+  "projectType": "application"
 }

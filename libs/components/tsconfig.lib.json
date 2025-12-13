@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "rootDir": "src/lib",
     "outDir": "out-tsc/lib",
     "declaration": true,
     "types": [
@@ -14,11 +15,16 @@
     "tsBuildInfoFile": "out-tsc/lib/tsconfig.lib.tsbuildinfo"
   },
   "exclude": [
-    "out-tsc",
+    "out-tsc/**",
     "eslint.config.ts",
     "jest.config.ts",
     "src/**/*.test.ts",
     "src/**/*.test.tsx"
+  ],
+  "references": [
+    {
+      "path": "../dates/tsconfig.lib.json"
+    }
   ],
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
