@@ -4,7 +4,7 @@
     "declaration": true,
     "declarationMap": true,
     "baseUrl": ".",
-    "allowJs": true,
+    "allowJs": false,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "plugins": [

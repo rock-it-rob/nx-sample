@@ -1,1 +1,1 @@
-export * from './lib/dates.js';
+export * from './lib/custom-dayjs.js';
