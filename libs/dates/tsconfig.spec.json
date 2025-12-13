@@ -1,16 +1,14 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/jest",
+    "outDir": "out-tsc/test",
+    "tsBuildInfoFile": "out-tsc/test/tsconfig.lib.tsbuildinfo",
     "types": ["jest", "node"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "importHelpers": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "module": "NodeNext",
+    "moduleResolution": "nodenext"
   },
-  "include": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.d.ts"],
+  "include": ["jest.config.ts", "src/**/*.test.ts"],
+  "exclude": ["out-tsc/**"],
   "references": [
     {
       "path": "./tsconfig.lib.json"
