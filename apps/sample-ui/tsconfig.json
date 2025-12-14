@@ -12,18 +12,10 @@
       "path": "../../libs/components"
     }
   ],
-  "include": [
-    "next-env.d.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["next-env.d.ts", "eslint.config.js"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "noEmit": true,
     "incremental": true,

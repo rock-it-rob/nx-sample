@@ -2,12 +2,16 @@
   "name": "@nx-sample/dates",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "types": "./out-tsc/lib/index.d.ts",
       "default": "./out-tsc/lib/index.js"
     }
+  },
+  "nx": {
+    "tags": [
+      "lib:js"
+    ]
   }
 }

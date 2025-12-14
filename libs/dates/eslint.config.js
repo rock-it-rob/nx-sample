@@ -1,11 +1,11 @@
 const nx = require('@nx/eslint-plugin');
-const baseConfig = require('../../eslint.config.ts');
+const baseConfig = require('../../eslint.config.js');
 
 module.exports = [
   ...baseConfig,
   ...nx.configs['flat/typescript'],
   {
-    files: ['**/*.ts', '**/*.ts', '**/*.js', '**/*.jsx'],
+    files: ['**/*.ts', '**/*.ts'],
     // Override or add rules here
     rules: {},
   },

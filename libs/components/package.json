@@ -8,5 +8,8 @@
       "default": "./out-tsc/lib/index.js"
     },
     "./package.json": "./package.json"
+  },
+  "nx": {
+    "tags": ["lib:ui"]
   }
 }
