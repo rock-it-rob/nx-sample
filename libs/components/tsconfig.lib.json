@@ -16,7 +16,7 @@
   },
   "exclude": [
     "out-tsc/**",
-    "eslint.config.js",
+    "eslint.config.mjs",
     "jest.config.ts",
     "src/**/*.test.ts",
     "src/**/*.test.tsx"

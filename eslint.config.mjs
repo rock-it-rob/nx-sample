@@ -1,11 +1,12 @@
-const nx = require('@nx/eslint-plugin');
+import nx from '@nx/eslint-plugin';
+import { defineConfig } from 'eslint/config';
 
-module.exports = [
+export default defineConfig([
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
-  ...nx.configs['flat/javascript'],
+  ...nx.configs['flat/react'],
   {
-    ignores: ['**/dist'],
+    ignores: ['**/out-tsc'],
   },
   {
     files: ['**/*.ts', '**/*.tsx'],
@@ -20,14 +21,14 @@ module.exports = [
               sourceTag: 'app',
               onlyDependOnLibsWithTags: ['lib:*'],
             },
+            {
+              sourceTag: 'lib:*',
+              onlyDependOnLibsWithTags: ['lib:*'],
+            },
           ],
         },
       ],
+      'react-hooks/exhaustive-deps': 'error',
     },
   },
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    // Override or add rules here
-    rules: {},
-  },
-];
+]);

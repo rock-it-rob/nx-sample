@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.base.json",
-  "files": ["eslint.config.js"],
+  "files": ["eslint.config.mjs"],
   "references": [
     {
       "path": "./apps/sample-ui"

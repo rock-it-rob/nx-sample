@@ -1,11 +1,17 @@
 import { AppBar, Grid, Typography } from '@mui/material';
 import { dayjs } from '@nx-sample/dates';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
-export const MainMenu: React.FC = () => {
+export const MainMenu = () => {
   const [timestamp, setTimestamp] = useState<string | null>(null);
 
+  const tx = () => undefined;
+  // should get a lint warning here.
   useEffect(() => setTimestamp(dayjs().format('MM/DD/YYYY HH:mm:ss')), []);
+
+  useEffect(() => tx(), []);
+
+  const cb = useCallback(() => tx(), []);
 
   return (
     <AppBar>
@@ -14,9 +20,8 @@ export const MainMenu: React.FC = () => {
           <Typography>Main Menu</Typography>
         </Grid>
         <Grid size={12}>
-          <Typography>
-            {timestamp} {dayjs.tz.guess()}
-          </Typography>
+          <Typography>{timestamp}</Typography>
+          <Typography>{cb()}</Typography>
         </Grid>
       </Grid>
     </AppBar>
