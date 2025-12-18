@@ -6,7 +6,7 @@ export default defineConfig([
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/react'],
   {
-    ignores: ['**/out-tsc'],
+    ignores: ['**/out-tsc', '**/.next/**/*'],
   },
   {
     files: ['**/*.ts', '**/*.tsx'],

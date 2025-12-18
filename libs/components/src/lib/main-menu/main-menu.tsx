@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 export const MainMenu = () => {
   const [timestamp, setTimestamp] = useState<string | null>(null);
 
-  const tx = () => undefined;
+  const tx = useCallback(() => undefined, []);
   // should get a lint warning here.
   useEffect(() => setTimestamp(dayjs().format('MM/DD/YYYY HH:mm:ss')), []);
 
