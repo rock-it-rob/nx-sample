@@ -6,7 +6,7 @@ export default defineConfig([
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/react'],
   {
-    ignores: ['**/out-tsc', '**/.next/**/*'],
+    ignores: ['**/out-tsc', '**/.next/**/*', '**/next-env.d.ts'],
   },
   {
     files: ['**/*.ts', '**/*.tsx'],
@@ -20,6 +20,11 @@ export default defineConfig([
             {
               sourceTag: 'app',
               onlyDependOnLibsWithTags: ['lib:*'],
+              allowedExternalImports: [
+                'next*',
+                'react*',
+                '@fontsource/roboto/*.css',
+              ],
             },
             {
               sourceTag: 'lib:*',

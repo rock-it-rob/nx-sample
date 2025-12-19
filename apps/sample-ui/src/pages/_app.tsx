@@ -5,7 +5,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { MainMenu } from '@nx-sample/components';
+import { MainMenu, Box } from '@nx-sample/components';
 
 export default function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,7 +15,9 @@ export default function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <main>
         <MainMenu />
-        <Component {...pageProps} />
+        <Box sx={{ mt: '60px' }}>
+          <Component {...pageProps} />
+        </Box>
       </main>
     </>
   );
