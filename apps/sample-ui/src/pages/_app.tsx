@@ -6,6 +6,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { MainMenu, Box } from '@nx-sample/components';
+import '@nx-sample/components/styles.css';
 
 export default function CustomApp({ Component, pageProps }: AppProps) {
   return (
