@@ -1,3 +1,8 @@
 .MuiCard-root {
     margin: 20px;
 }
+
+.MuiCardHeader-root {
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+}
