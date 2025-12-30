@@ -1,16 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": "src/lib",
-    "outDir": "out-tsc/lib",
-    "tsBuildInfoFile": "out-tsc/lib/tsconfig.lib.tsbuildinfo",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "importHelpers": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true
+    "rootDir": ".",
+    "outDir": "out-tsc"
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["out-tsc/**", "jest.config.ts", "src/**/*.test.ts"]
+  "exclude": ["src/**/*.test.ts"]
 }

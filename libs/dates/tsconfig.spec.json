@@ -1,14 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "out-tsc/test",
-    "tsBuildInfoFile": "out-tsc/test/tsconfig.lib.tsbuildinfo",
-    "types": ["jest", "node"],
-    "module": "NodeNext",
-    "moduleResolution": "nodenext"
+    "rootDir": ".",
+    "outDir": "out-tsc",
+    "types": ["jest", "node"]
   },
   "include": ["jest.config.ts", "src/**/*.test.ts"],
-  "exclude": ["out-tsc/**"],
   "references": [
     {
       "path": "./tsconfig.lib.json"
