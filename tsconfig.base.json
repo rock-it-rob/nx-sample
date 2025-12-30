@@ -1,21 +1,24 @@
 {
   "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
     "composite": true,
     "declaration": true,
     "declarationMap": true,
-    "baseUrl": ".",
-    "allowJs": false,
-    "strict": true,
+    "emitDeclarationOnly": true,
     "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
-    "importHelpers": true,
-    "emitDeclarationOnly": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "strict": true,
     "types": ["node"]
   }
 }

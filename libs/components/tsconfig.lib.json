@@ -1,29 +1,19 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "src/lib",
-    "outDir": "out-tsc/lib",
-    "declaration": true,
+    "rootDir": ".",
+    "outDir": "out-tsc",
     "types": [
       "node",
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts"
-    ],
-    "jsx": "preserve",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "tsBuildInfoFile": "out-tsc/lib/tsconfig.lib.tsbuildinfo"
+    ]
   },
-  "exclude": [
-    "out-tsc/**",
-    "jest.config.ts",
-    "src/**/*.test.ts",
-    "src/**/*.test.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"],
   "references": [
     {
       "path": "../dates/tsconfig.lib.json"
     }
-  ],
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  ]
 }
