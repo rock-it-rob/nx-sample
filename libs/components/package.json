@@ -7,8 +7,8 @@
   ],
   "exports": {
     ".": {
-      "types": "./out-tsc/lib/index.d.ts",
-      "default": "./out-tsc/lib/index.js"
+      "types": "./out-tsc/src/lib/index.d.ts",
+      "default": "./out-tsc/src/lib/index.js"
     },
     "./styles.css": "./src/lib/styles.css",
     "./package.json": "./package.json"
