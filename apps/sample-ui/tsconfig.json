@@ -1,24 +1,31 @@
 {
   "extends": "../../tsconfig.base.json",
-  "files": [],
+  "types": [
+    "node",
+    "@nx/react/typings/cssmodule.d.ts",
+    "@nx/react/typings/image.d.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "next-env.d.ts",
+    "jest.config.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "index.d.ts"
+  ],
+  "compilerOptions": {
+    "composite": false,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noEmit": true,
+    "incremental": true,
+    "target": "ES2017",
+    "skipLibCheck": true
+  },
   "references": [
-    {
-      "path": "./tsconfig.spec.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    },
     {
       "path": "../../libs/components"
     }
   ],
-  "include": [],
-  "exclude": [],
-  "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "noEmit": false,
-    "incremental": true,
-    "target": "ES2017",
-    "skipLibCheck": false
-  }
+  "exclude": ["node_modules"]
 }

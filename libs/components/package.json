@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "files": [
-    "./src/lib/styles.css"
+    "./src/lib/styles.css",
+    "./src/lib/assets/*"
   ],
   "exports": {
-    ".": {
-      "types": "./out-tsc/src/lib/index.d.ts",
-      "default": "./out-tsc/src/lib/index.js"
-    },
+    "./assets/*": "./src/lib/assets/*",
     "./styles.css": "./src/lib/styles.css",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    ".": {
+      "default": "./out-tsc/src/lib/index.d.ts"
+    }
   },
   "nx": {
     "tags": [
