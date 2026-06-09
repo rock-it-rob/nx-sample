@@ -3,5 +3,14 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/sample-ui",
   "projectType": "application",
-  "tags": ["app"]
+  "tags": ["app"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "options": {
+        "turbo": true,
+        "outputPath": "{projectRoot}"
+      }
+    }
+  }
 }
