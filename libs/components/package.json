@@ -2,21 +2,24 @@
   "name": "@nx-sample/components",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "files": [
-    "./src/lib/styles.css",
-    "./src/lib/assets/*"
+    "./src/lib/styles.css"
   ],
   "exports": {
-    "./assets/*": "./src/lib/assets/*",
     "./styles.css": "./src/lib/styles.css",
     "./package.json": "./package.json",
     ".": {
-      "default": "./out-tsc/src/lib/index.d.ts"
+      "types": "./out-tsc/src/lib/index.d.ts",
+      "default": "./out-tsc/src/lib/index.js"
     }
   },
   "nx": {
     "tags": [
       "lib:ui"
     ]
+  },
+  "devDependencies": {
+    "@nx-sample/dates": "*"
   }
 }

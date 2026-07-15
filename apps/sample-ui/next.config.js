@@ -1,4 +1,5 @@
 //@ts-check
+// import { withNx } from '@nx/next';
 const { composePlugins, withNx } = require('@nx/next');
 
 /**
@@ -13,9 +14,7 @@ const nextConfig = {
   output: 'standalone',
 };
 
-const plugins = [
-  // Add more Next.js plugins to this list if needed.
-  withNx,
-];
+const plugins = [withNx];
 
+// export default withNx(nextConfig);
 module.exports = composePlugins(...plugins)(nextConfig);

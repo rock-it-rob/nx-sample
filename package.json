@@ -9,11 +9,10 @@
   "devDependencies": {
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
-    "@emotion/react": "~11.14.0",
-    "@emotion/styled": "~11.14.1",
     "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^2.1.1",
     "@eslint/js": "^9.8.0",
-    "@mui/material": "~7.3.6",
+    "@next/eslint-plugin-next": "^15.2.4",
     "@nx/eslint": "20.8.3",
     "@nx/eslint-plugin": "20.8.3",
     "@nx/jest": "20.8.3",
@@ -21,6 +20,7 @@
     "@nx/next": "20.8.3",
     "@nx/react": "20.8.3",
     "@swc-node/register": "~1.9.1",
+    "@swc/cli": "~0.6.0",
     "@swc/core": "^1.5.7",
     "@swc/helpers": "~0.5.11",
     "@swc/jest": "~0.2.36",
@@ -53,14 +53,16 @@
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.9",
-    "next": "^15.5.9",
+    "dayjs": "^1.11.19",
+    "next": "^16.2.9",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-is": "18.3.1",
-    "dayjs": "^1.11.19"
+    "@mui/material": "~7.3.6",
+    "@emotion/react": "~11.14.0",
+    "@emotion/styled": "~11.14.1"
   },
   "overrides": {
     "react-is": "18.3.1"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  }
 }
