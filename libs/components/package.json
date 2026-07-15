@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "files": [
-    "./src/lib/styles.css"
+    "./src/lib/styles.css",
+    "./src/lib/assets/*"
   ],
   "exports": {
+    "./assets/*": "./src/lib/assets/*",
     "./styles.css": "./src/lib/styles.css",
     "./package.json": "./package.json",
     ".": {
