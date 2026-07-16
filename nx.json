@@ -60,10 +60,11 @@
       }
     }
   },
-  "useLegacyCache": true,
   "targetDefaults": {
     "test": {
       "dependsOn": ["^build"]
     }
-  }
+  },
+  "analytics": true,
+  "neverConnectToCloud": true
 }
