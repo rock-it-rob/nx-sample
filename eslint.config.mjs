@@ -4,6 +4,7 @@ import { defineConfig } from 'eslint/config';
 export default defineConfig([
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
+  ...nx.configs['flat/javascript'],
   ...nx.configs['flat/react'],
   {
     ignores: ['**/out-tsc', '**/.next/**/*', '**/next-env.d.ts'],
@@ -15,7 +16,6 @@ export default defineConfig([
         'error',
         {
           enforceBuildableLibDependency: true,
-          allow: ['^.*/eslint(\\.base)?\\.config\\.[jt]s$'],
           depConstraints: [
             {
               sourceTag: 'app',
